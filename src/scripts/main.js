@@ -162,17 +162,17 @@ function showNotification(title, message, type) {
   }, 3000);
 }
 
-button.addEventListener('click', (e) => {
+button.addEventListener('submit', (e) => {
   e.preventDefault();
 
   const namePerson = inputName.value.trim();
   const position = inputPosition.value.trim();
   const office = select.value.trim();
-  const age = inputAge.value.trim();
+  const age = +inputAge.value.trim();
   const salary = +inputSalary.value.trim();
 
   if (!namePerson || !position || !office || !age || !salary) {
-    showNotification('Error', 'All fields are requared', 'error');
+    showNotification('Error', 'All fields are required', 'error');
 
     return;
   }
