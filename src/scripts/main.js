@@ -162,7 +162,7 @@ function showNotification(title, message, type) {
   }, 3000);
 }
 
-button.addEventListener('submit', (e) => {
+form.addEventListener('submit', (e) => {
   e.preventDefault();
 
   const namePerson = inputName.value.trim();
