@@ -65,7 +65,6 @@ const inputName = document.createElement('input');
 inputName.setAttribute('name', 'name');
 inputName.setAttribute('type', 'text');
 inputName.setAttribute('data-qa', 'name');
-inputName.required = true;
 labelName.appendChild(inputName);
 
 const labelPosition = document.createElement('label');
@@ -78,7 +77,6 @@ const inputPosition = document.createElement('input');
 inputPosition.setAttribute('name', 'position');
 inputPosition.setAttribute('type', 'text');
 inputPosition.setAttribute('data-qa', 'position');
-inputPosition.required = true;
 labelPosition.appendChild(inputPosition);
 
 const labelOffice = document.createElement('label');
@@ -90,7 +88,6 @@ const select = document.createElement('select');
 
 select.setAttribute('name', 'office');
 select.setAttribute('data-qa', 'office');
-select.required = true;
 labelOffice.appendChild(select);
 
 const offices = [
@@ -118,7 +115,6 @@ const inputAge = document.createElement('input');
 inputAge.setAttribute('name', 'age');
 inputAge.setAttribute('type', 'number');
 inputAge.setAttribute('data-qa', 'age');
-inputAge.required = true;
 labelAge.appendChild(inputAge);
 
 const labelSalary = document.createElement('label');
@@ -131,7 +127,6 @@ const inputSalary = document.createElement('input');
 inputSalary.setAttribute('name', 'salary');
 inputSalary.setAttribute('type', 'number');
 inputSalary.setAttribute('data-qa', 'salary');
-inputSalary.required = true;
 labelSalary.appendChild(inputSalary);
 
 const button = document.createElement('button');
